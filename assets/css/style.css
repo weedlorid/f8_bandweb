@@ -4,74 +4,78 @@
     box-sizing: border-box;
 }
 html{
-    font-family: Arial, Helvetica, sans-serif;
-}
-#main{
-
-}
-
-#header{
-    height :46.5px;
-    background-color: black;
-}
-#nav{
-
+    font-family: Arial, Helvetica, sans-serif;   
 }
 #nav,.subnav{
     list-style-type: none;
 }
-#nav >li{
+.header{
+    height: 46px;
+    background-color: black;
+}
+#nav{
     display: inline-block;
 }
-#nav li{
- 
+#nav>li{
+    display: inline-block;
     position: relative;
-    
 }
-#nav >li >a{
-    color: white;
-    text-transform: uppercase;
+#nav>li:hover>a,#nav .subnav li:hover{
+    background-color: #ccc;
+    color: black;
 }
 #nav li a{
     text-decoration: none;
-    line-height: 46.5px;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    font-size: 15px;
+    line-height: 46px;
+    padding: 0px 24px;
+}
+#nav  li:hover .subnav{
+    display: block;   
+}
+#nav .subnav a{
+    color: black;
+    line-height: 35px;
+    padding: 0px 15px;
+    text-transform: capitalize;
+}
+.subnav{
+    min-width: 160px;
+    background-color: white;
+    position: absolute;
+    top:100%;
+    left: 0;
+    display: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#nav li .arrow-down{
+    font-size: 10px;
+}
+.header .search-button{
+    display: block;
+    float: right;
+}
+.header div:hover .ti-search{
+    background-color: #f44336;
+    cursor: pointer;
+}
+.header div .ti-search{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
     padding: 0px 24px;
     display: block;
-   font-size: 15px;
 }
-#nav li:hover .subnav{
-    display: block;
+.slider{
+    height: 500px;
+    background-color: red;
 }
-#nav >li:hover >a,#nav .subnav li:hover{
-    color: black ;
-    background-color: #ccc ;
-}
-
-#nav .subnav a{
-    color: #000;
-    padding: 0px 12px;
-    line-height: 38px;
-}
-
-#nav .subnav {
-    display:none;
-    top: 100%;
-    left: 0;
-    position: absolute;
-    min-width: 160px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-#slider{
-    /* min-height: 500px;
-    background-color: #333; */
-}
-
-#content{
+.content{
 
 }
-
-#footer{
+.footer{
 
 }
