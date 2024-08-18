@@ -12,6 +12,12 @@ html{
 .header{
     height: 46px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
 }
 #nav{
     display: inline-block;
@@ -58,7 +64,7 @@ html{
     display: block;
     float: right;
 }
-.header div:hover .ti-search{
+.header div:hover {
     background-color: #f44336;
     cursor: pointer;
 }
@@ -70,11 +76,35 @@ html{
     display: block;
 }
 .slider{
-    height: 500px;
-    background-color: red;
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    /* có thể viết gọn đc */
+    background:url('/img/background-img/slider1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.slider .text-heading{
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+.slider .text-description{
+    margin-top :25px;
+    color: white;
+    font-size: 15px;
 }
 .content{
-
+    height: 500px;
+    background-color: red;
 }
 .footer{
 
