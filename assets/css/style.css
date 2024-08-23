@@ -6,6 +6,9 @@
 html{
     font-family: Arial, Helvetica, sans-serif;   
 }
+.clear{
+    clear: both;
+}
 #nav,.subnav{
     list-style-type: none;
 }
@@ -105,7 +108,7 @@ html{
 .content{
  
 }
-.content .content-section{
+#content .content-section{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -129,6 +132,23 @@ html{
     font-size: 15px;
     text-align: justify;
     line-height: 1.6;
+}
+#content .member-list{
+    margin-top: 48px;
+}
+#content .member-name{
+    font-size: 15px;
+    
+}
+#content .member-item {
+    float:left;
+    width: 33.33333%;
+    text-align: center;
+}
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius:4px;
 }
 .footer{
 
