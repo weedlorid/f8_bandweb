@@ -9,7 +9,11 @@ html{
 .clear{
     clear: both;
 }
-#nav,.subnav{
+.text-white{
+    color:white !important;
+}
+/* nav section */
+#nav,.subnav,.ticket-lists{
     list-style-type: none;
 }
 .header{
@@ -20,7 +24,6 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
-    
 }
 #nav{
     display: inline-block;
@@ -42,6 +45,7 @@ html{
     line-height: 46px;
     padding: 0px 24px;
 }
+/* subnav section */
 #nav  li:hover .subnav{
     display: block;   
 }
@@ -78,6 +82,7 @@ html{
     padding: 0px 24px;
     display: block;
 }
+/* slider section */
 .slider{
     position: relative;
     margin-top: 46px;
@@ -105,9 +110,11 @@ html{
     color: white;
     font-size: 15px;
 }
+/* content section */
 .content{
  
 }
+/* about section */
 #content .content-section{
     width: 800px;
     margin-left: auto;
@@ -149,6 +156,86 @@ html{
     margin-top: 15px;
     width: 154px;
     border-radius:4px;
+
+}
+/* tour section */
+.tour-section{
+    background-color: #000;
+}
+.ticket-lists{
+    background-color: white;
+    margin-top: 40px;
+}
+.ticket-lists li{
+    color: #757575;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.ticket-lists .sold-out{
+    background-color: #f44336;
+    color: white;
+    margin-left: 16px;
+    padding: 3px 4px;
+    text-align: center;
+    line-height: 1.5;
+}
+.ticket-lists .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    padding: 0px 8px;
+    background-color: #000;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: -3px;
+}
+/* tour places */
+.places-list{
+    margin: 32px -8px 48px;
+}
+.place-item{
+   float: left;
+   width: 33.333333%;
+   padding: 0 8px;
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    background-color: white;
+    padding: 16px;
+    font-size: 15px;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 700;
+}
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+.place-desc{
+    margin: 15px 0;
+    line-height: 22.5px;
+}
+.place-buy-btn{
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 16px;
+    margin-bottom: 15px;
+}
+.place-buy-btn:hover{
+    color: black;
+    background-color: #ccc;
 }
 .footer{
 
