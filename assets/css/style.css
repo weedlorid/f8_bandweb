@@ -3,15 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* common */
 html{
-    font-family: Arial, Helvetica, sans-serif;   
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;   
 }
 .clear{
     clear: both;
 }
+.text-center{
+    text-align: center;
+}
 .text-white{
     color:white !important;
 }
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+.col-3{
+    width: 33.333333%;
+}
+.col-2{
+    width: 50%;
+}
+
+/* common */
 /* nav section */
 #nav,.subnav,.ticket-lists{
     list-style-type: none;
@@ -119,7 +155,7 @@ html{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 .content-section .section-heading{
     text-align: center;
@@ -148,8 +184,6 @@ html{
     
 }
 #content .member-item {
-    float:left;
-    width: 33.33333%;
     text-align: center;
 }
 #content .member-img{
@@ -195,12 +229,7 @@ html{
 }
 /* tour places */
 .places-list{
-    margin: 32px -8px 48px;
-}
-.place-item{
-   float: left;
-   width: 33.333333%;
-   padding: 0 8px;
+    margin-top: 32px;
 }
 .place-img{
     width: 100%;
@@ -234,13 +263,10 @@ html{
     margin-bottom: 15px;
     border: none;
 }
-.place-buy-btn:hover{
+.place-buy-btn:hover,.contact-form .form-submit-btn:hover{
     color: black;
     background-color: #ccc;
     cursor: pointer;
-}
-.footer{
-
 }
 
 .modal .modal-header i{
@@ -337,4 +363,59 @@ html{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* contact */
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-info i[class*="ti-"]{
+   width: 10%;
+   display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+.contact-form .form-submit-btn{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 11px 18px;
+    float: right;
+}
+
+/* footer */
+.map-section img{
+    width: 100%;
+}
+.footer{
+    padding: 60px 16px;
+    text-align: center;
+}
+.footer .socials-list{
+    font-size: 24px;
+}
+.footer .socials-list a{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+.footer .socials-list a:hover,.footer .copyright a{
+    color: rgba(0,0,0,0.3);
+}
+.footer .copyright{
+    margin-top: 15px;
+    color: rgba(0,0,0,0.6);
+}
+.footer .copyright a{
+    color: rgba(0,0,0,0.6);
 }
